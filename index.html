@@ -110,6 +110,29 @@
     font-size:0.9rem; color:#6B5A28; max-width:640px;
   }
 
+  /* Featured case study with screens */
+  .featured{
+    background:var(--panel); border:1px solid var(--line); margin-bottom:2px;
+    padding:40px; display:grid; grid-template-columns:0.9fr 1.4fr; gap:44px;
+  }
+  .featured .info .tag{color:var(--cobalt); font-size:0.85rem;}
+  .featured .info h3{font-size:1.6rem; margin-top:10px;}
+  .featured .info p{color:var(--ink-soft); margin-top:14px; font-size:0.98rem;}
+  .featured .info ul{margin-top:18px; padding-left:18px; color:var(--ink-soft); font-size:0.92rem;}
+  .featured .info ul li{margin-bottom:6px;}
+  .screens{
+    display:flex; gap:14px; overflow-x:auto; padding-bottom:8px;
+    scrollbar-width:thin;
+  }
+  .screens img{
+    height:340px; width:auto; border-radius:14px; border:1px solid var(--line);
+    flex:0 0 auto; box-shadow:0 8px 24px rgba(0,0,0,0.08);
+  }
+  @media (max-width:760px){
+    .featured{grid-template-columns:1fr; padding:26px;}
+    .screens img{height:260px;}
+  }
+
   /* About */
   .about-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:60px; align-items:start;}
   .about-grid p{color:var(--ink-soft); margin-bottom:16px; max-width:520px;}
@@ -181,6 +204,33 @@
     <div class="section-head">
       <h2>UI/UX Case Studies</h2>
       <p>Selected product design work spanning fintech, e-commerce, and service platforms.</p>
+    </div>
+    <div class="featured">
+      <div class="info">
+        <span class="tag">Food &amp; Beverage · Mobile App</span>
+        <h3>PEPE Pastories — Bakery Ordering App</h3>
+        <p>End-to-end mobile ordering experience for a bakery brand, from browsing products through checkout, payment, and live order tracking.</p>
+        <ul>
+          <li>Product browsing with clear pricing and descriptions</li>
+          <li>Multi-method payment flow (card, bank transfer, cash on delivery)</li>
+          <li>Real-time order tracking via map</li>
+          <li>Post-purchase review and ratings screen</li>
+        </ul>
+      </div>
+      <div class="screens">
+        <img src="images/pastries-01-home.png" alt="PEPE Pastories home screen">
+        <img src="images/pastries-03-product.png" alt="Product details screen">
+        <img src="images/pastries-04-payment-method.png" alt="Payment method selection screen">
+        <img src="images/pastries-05-payment-success.png" alt="Payment success confirmation screen">
+        <img src="images/pastries-06-order-tracking.png" alt="Live order tracking map screen">
+        <img src="images/pastries-07-reviews.png" alt="Customer reviews screen">
+      </div>
+      <p style="margin-top:20px; font-size:0.85rem; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.04em;">Desktop / Web Version</p>
+      <div class="screens" style="margin-top:14px;">
+        <img src="images/pastries-web-01-home.png" alt="PEPE Pastries desktop home page" style="height:auto; width:520px;">
+        <img src="images/pastries-web-02-product.png" alt="PEPE Pastries desktop product page" style="height:auto; width:520px;">
+        <img src="images/pastries-web-03-payment.png" alt="PEPE Pastries desktop payment page" style="height:auto; width:340px;">
+      </div>
     </div>
     <div class="grid">
       <div class="case">
