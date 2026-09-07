@@ -105,6 +105,17 @@
   }
   .tile span{font-size:0.9rem; color:var(--ink-soft);}
   .tile strong{font-size:1rem; font-weight:500;}
+  .tile.img-tile{padding:0; position:relative; overflow:hidden;}
+  .tile.img-tile img{
+    width:100%; height:100%; object-fit:contain; background:#fff; padding:18px;
+  }
+  .tile.img-tile.dark img{background:#000;}
+  .tile.img-tile .caption{
+    position:absolute; bottom:0; left:0; right:0; padding:10px 14px;
+    background:rgba(27,27,24,0.82); color:#F7F5F0; font-size:0.82rem;
+    opacity:0; transition:opacity .2s;
+  }
+  .tile.img-tile:hover .caption{opacity:1;}
   .note{
     margin-top:28px; padding:18px 22px; background:#FBF3E1; border:1px solid #EFDDAF;
     font-size:0.9rem; color:#6B5A28; max-width:640px;
@@ -332,14 +343,36 @@
       <p>Branding, print, and social media design work.</p>
     </div>
     <div class="gallery">
-      <div class="tile"><div class="glyph">Lg</div><strong>Logo &amp; Brand Identity</strong><span>Marks, brand systems</span></div>
-      <div class="tile"><div class="glyph">Ad</div><strong>Print &amp; Digital Ads</strong><span>Campaign creative</span></div>
-      <div class="tile"><div class="glyph">Sm</div><strong>Social Media Design</strong><span>Post &amp; story templates</span></div>
-      <div class="tile"><div class="glyph">Pk</div><strong>Packaging &amp; Collateral</strong><span>Product-facing design</span></div>
-      <div class="tile"><div class="glyph">Ps</div><strong>Poster &amp; Flyer Design</strong><span>Event &amp; promo pieces</span></div>
-      <div class="tile"><div class="glyph">St</div><strong>Stationery &amp; Templates</strong><span>Business collateral</span></div>
+      <div class="tile img-tile">
+        <img src="images/gd-01-seychelles-logo.png" alt="Seychelles with Mac logo design">
+        <div class="caption">Seychelles with Mac — Logo</div>
+      </div>
+      <div class="tile img-tile dark">
+        <img src="images/gd-02-seychelles-letterhead.png" alt="Seychelles with Mac letterhead design" style="object-fit:cover;">
+        <div class="caption">Seychelles with Mac — Letterhead</div>
+      </div>
+      <div class="tile img-tile dark">
+        <img src="images/gd-03-tire-logo.png" alt="Ti-Re Collections logo design">
+        <div class="caption">Ti-Re Collections — Logo</div>
+      </div>
+      <div class="tile img-tile">
+        <img src="images/gd-04-tire-clothing-tag.png" alt="Ti-Re Collections clothing tag design">
+        <div class="caption">Ti-Re Collections — Clothing Tag</div>
+      </div>
+      <div class="tile img-tile">
+        <img src="images/gd-05-social-media-unit-logo.png" alt="Social Media Unit Liberation Chapel logo design">
+        <div class="caption">Liberation Chapel — Social Media Unit Logo</div>
+      </div>
+      <div class="tile img-tile dark">
+        <img src="images/gd-06-djoy-logo.png" alt="Djoy brand logo design">
+        <div class="caption">Djoy — Brand Logo</div>
+      </div>
+      <div class="tile img-tile">
+        <img src="images/gd-07-foundation-fitness-logo.png" alt="Foundation Fitness Festival event logo design">
+        <div class="caption">Foundation Fitness Festival — Event Logo</div>
+      </div>
     </div>
-    <div class="note">This section is set up as a gallery grid — swap each tile for an actual project image once your cleaned-up graphic design files (watermark-free, no derivative branding) are ready.</div>
+    <div class="note">More categories (print ads, packaging, social media templates) coming as cleaned, watermark-free files are ready.</div>
   </div>
 </section>
 
