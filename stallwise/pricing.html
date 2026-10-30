@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing and sign up | Stallwise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="index.html"><i></i>Stallwise</a>
+  <nav aria-label="Main"><ul>
+    <li><a class="link" href="index.html">Overview</a></li>
+    <li><a class="link" href="dashboard.html">Live demo</a></li>
+    <li><a class="link" href="pricing.html" aria-current="page">Pricing</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main">
+<section class="block" style="padding-bottom:32px"><div class="wrap">
+  <div class="sec-head"><h1 style="font-size:clamp(2rem,4vw,3rem)">Pay when your shop grows, not before</h1><p>Start free with one shop. Move up when you add staff or more branches.</p></div>
+  <div class="billing">
+    <div class="seg" data-billing role="group" aria-label="Billing period">
+      <button type="button" data-mode="monthly" aria-pressed="true">Monthly</button>
+      <button type="button" data-mode="annual" aria-pressed="false">Yearly</button>
+    </div>
+    <span class="save">Save 20% yearly</span>
+  </div>
+  <div class="plans">
+    <article class="panel plan">
+      <h2 style="font-size:1.3rem">Starter</h2>
+      <div class="price"><span data-plan="starter">Free</span></div>
+      <p style="color:var(--muted)">For one shop with one person recording sales.</p>
+      <ul><li>1 shop, 1 user</li><li>Sales dashboard, 30-day history</li><li>Up to 50 products</li><li>Low-stock alerts</li></ul>
+      <a class="btn ghost" href="#start">Start free</a>
+    </article>
+    <article class="panel plan best">
+      <span class="tag">Most shops pick this</span>
+      <h2 style="font-size:1.3rem">Growth</h2>
+      <div class="price"><span data-plan="growth">&#8358;12,000</span> <small data-per data-plan="growth" data-billnote>per month</small></div>
+      <p style="color:var(--muted)">For a busy shop with a few staff.</p>
+      <ul><li>3 shops, 5 users</li><li>Full sales history</li><li>Unlimited products</li><li>One-tap supplier reorders</li><li>Weekly summary by WhatsApp</li></ul>
+      <a class="btn" href="#start">Start 14-day trial</a>
+    </article>
+    <article class="panel plan">
+      <h2 style="font-size:1.3rem">Scale</h2>
+      <div class="price"><span data-plan="scale">&#8358;35,000</span> <small data-per data-plan="scale" data-billnote>per month</small></div>
+      <p style="color:var(--muted)">For chains that need control across branches.</p>
+      <ul><li>Unlimited shops and users</li><li>Branch-by-branch comparison</li><li>Staff roles and permissions</li><li>Priority support</li></ul>
+      <a class="btn ghost" href="#start">Start 14-day trial</a>
+    </article>
+  </div>
+</div></section>
+
+<section class="block alt"><div class="wrap two-col">
+  <div>
+    <div class="sec-head" style="margin-bottom:12px"><h2>Common questions</h2></div>
+    <details><summary>Do I need a computer?</summary><p>No. Stallwise works in your phone browser, so you can record a sale or check stock from the shop counter.</p></details>
+    <details><summary>Can I import my current product list?</summary><p>Yes. Upload a spreadsheet or CSV with product name, price and stock, and Stallwise builds your catalogue in a few minutes.</p></details>
+    <details><summary>What happens when my trial ends?</summary><p>You move to Starter automatically. Nothing is deleted, and you only pay if you choose a paid plan.</p></details>
+    <details><summary>How do I pay?</summary><p>By card or bank transfer in naira. Yearly plans are invoiced once.</p></details>
+  </div>
+  <div id="start" style="scroll-margin-top:90px">
+    <div class="sec-head" style="margin-bottom:20px"><h2>Create your free shop</h2><p>It takes about two minutes. You can add products after.</p></div>
+    <form class="form" id="signup" novalidate>
+      <label for="shop">Shop name<input id="shop" name="shop" autocomplete="organization" aria-describedby="shop-err"><span class="err" id="shop-err"></span></label>
+      <label for="email">Email<input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-err"><span class="err" id="email-err"></span></label>
+      <label for="phone">Phone number<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="0803 123 4567" aria-describedby="phone-err"><span class="err" id="phone-err"></span></label>
+      <button class="btn" type="submit">Create free shop</button>
+    </form>
+    <div class="success" id="signup-ok" tabindex="-1" hidden>
+      <p><b>Welcome, <span id="ok-name"></span>.</b> Your free shop is ready.</p>
+      <p style="margin-top:8px">This is a portfolio demo, so nothing was sent. <a href="dashboard.html">Open the demo dashboard</a> to see what you would get.</p>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 Stallwise. A fictional product, designed and built by Immanuel Ade as a portfolio case study.</span><a href="index.html">Overview</a></div></footer>
+<script src="app.js"></script>
+</body>
+</html>

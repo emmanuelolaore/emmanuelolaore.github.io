@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stallwise | Know what sells in your shop</title>
+<meta name="description" content="Stallwise turns your daily sales into clear numbers: what sold, what is running out, and what to reorder.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="index.html"><i></i>Stallwise</a>
+  <nav aria-label="Main"><ul>
+    <li><a class="link" href="index.html" aria-current="page">Overview</a></li>
+    <li><a class="link" href="dashboard.html">Live demo</a></li>
+    <li><a class="link" href="pricing.html">Pricing</a></li>
+    <li class="hide-s"><a class="btn sm" href="pricing.html#start">Start free</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap grid">
+  <div>
+    <h1>Know what sells before the shelf is empty.</h1>
+    <p class="lead">Stallwise reads your daily sales and tells you what is moving, what is running low, and what to reorder. Built for shops and market stalls that run on a phone and a notebook.</p>
+    <div class="actions">
+      <a class="btn" href="pricing.html#start">Start free</a>
+      <a class="btn ghost" href="dashboard.html">Open the live demo</a>
+    </div>
+    <small>Free for one shop. No card needed.</small>
+  </div>
+  <div class="panel demo" aria-label="Interactive sales preview">
+    <div class="demo-head">
+      <div><b style="font-family:var(--font-d)">Adaeze Provisions</b><div style="color:var(--muted);font-size:.85rem" data-rangelabel>Last 30 days</div></div>
+      <div class="seg" data-range role="group" aria-label="Date range">
+        <button type="button" data-n="7" aria-pressed="false">7 days</button>
+        <button type="button" data-n="30" aria-pressed="true">30 days</button>
+        <button type="button" data-n="90" aria-pressed="false">90 days</button>
+      </div>
+    </div>
+    <div class="kpis">
+      <div class="kpi" data-kpi="rev"><span>Revenue</span><b class="v"></b><div class="d"></div></div>
+      <div class="kpi" data-kpi="ord"><span>Orders</span><b class="v"></b><div class="d"></div></div>
+      <div class="kpi" data-kpi="aov"><span>Average basket</span><b class="v"></b><div class="d"></div></div>
+    </div>
+    <div class="chartbox" data-chart></div>
+  </div>
+</div></section>
+
+<section class="block alt" aria-labelledby="f-h"><div class="wrap">
+  <div class="sec-head"><h2 id="f-h">Three answers you check every morning</h2><p>Stallwise is built around the questions a shop owner already asks, not around charts for their own sake.</p></div>
+  <div class="cols3">
+    <article class="panel feat"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 8-9"/><path d="M15 5h5v5"/></svg></div><h3>Is this week better than last?</h3><p>Revenue, orders and average basket compared with the period before, in plain numbers you can read in five seconds.</p></article>
+    <article class="panel feat"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg></div><h3>What is about to run out?</h3><p>Set a reorder level per item. Stallwise flags anything below it and lets you send the reorder in one tap.</p></article>
+    <article class="panel feat"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Which products pay the rent?</h3><p>Rank every product by revenue and sort by units sold, so you stop restocking items that sit on the shelf.</p></article>
+  </div>
+</div></section>
+
+<section class="block" aria-labelledby="q-h"><div class="wrap quote">
+  <div>
+    <h2 id="q-h" class="sr" style="position:absolute;left:-999px">What shop owners say</h2>
+    <blockquote>&ldquo;I used to count tins on Sunday night. Now I open Stallwise on Monday and the reorder list is already there.&rdquo;<cite>Adaeze N., Adaeze Provisions, Lagos (sample story)</cite></blockquote>
+  </div>
+  <div class="stats">
+    <div><b>9 min</b>saved on stock counts each day</div>
+    <div><b>3 items</b>caught before stock-out in the first week</div>
+  </div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+  <div class="cta-band">
+    <div><h2>See your own numbers by tonight</h2><p>Add your products, record today&rsquo;s sales, and the dashboard fills itself in.</p></div>
+    <a class="btn gold" href="pricing.html#start">Start free</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 Stallwise. A fictional product, designed and built by Immanuel Ade as a portfolio case study.</span><a href="pricing.html">Pricing</a></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
