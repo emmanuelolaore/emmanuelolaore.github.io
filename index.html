@@ -149,6 +149,15 @@
     .screens img{height:260px;}
   }
 
+  /* Live project panel */
+  .live{display:flex; flex-direction:column; gap:2px; background:var(--line); border:1px solid var(--line); align-self:start;}
+  .live-link{background:var(--paper); padding:22px 24px; display:flex; flex-direction:column; gap:4px; transition:background .2s;}
+  .live-link:hover{background:#FBFAF7;}
+  .live-link b{font-family:'Fraunces', serif; font-weight:500; font-size:1.1rem;}
+  .live-link span{color:var(--ink-soft); font-size:0.92rem;}
+  .live-link:hover b{color:var(--cobalt);}
+  .featured .info .btn{margin-top:22px; color:var(--paper);}
+
   /* About */
   .about-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:60px; align-items:start;}
   .about-grid p{color:var(--ink-soft); margin-bottom:16px; max-width:520px;}
@@ -221,6 +230,26 @@
       <h2>UI/UX Case Studies</h2>
       <p>Selected product design work spanning fintech, e-commerce, and service platforms.</p>
     </div>
+    <div class="featured">
+      <div class="info">
+        <span class="tag">SaaS · Web App · Live Concept</span>
+        <h3>Stallwise — Sales Analytics for Small Shops</h3>
+        <p>A product concept for shop owners who track sales in a notebook. Designed and built as a working site that answers three questions: is this week better than last, what is about to run out, and which products pay the rent.</p>
+        <ul>
+          <li>Interactive sales preview with 7, 30 and 90 day views and period-on-period change</li>
+          <li>Dashboard with hover chart, sortable product table and one-tap low-stock reorders</li>
+          <li>Pricing page with monthly/yearly toggle, FAQ and a validated sign-up form</li>
+          <li>Accessible by default: keyboard focus, readable contrast, mobile-first layout</li>
+        </ul>
+        <a class="btn primary" href="stallwise/index.html">Open the live project</a>
+      </div>
+      <div class="live">
+        <a class="live-link" href="stallwise/index.html"><b>Landing page</b><span>Hero with a working sales preview</span></a>
+        <a class="live-link" href="stallwise/dashboard.html"><b>Dashboard</b><span>Chart, sortable table, stock alerts</span></a>
+        <a class="live-link" href="stallwise/pricing.html"><b>Pricing and sign-up</b><span>Billing toggle, FAQ, form validation</span></a>
+      </div>
+    </div>
+
     <div class="featured">
       <div class="info">
         <span class="tag">Food &amp; Beverage · Mobile App</span>
@@ -349,7 +378,7 @@
         <div class="stat">Simplified form completion for non-technical users</div>
       </div>
     </div>
-    <div class="note">Coming soon: SaaS dashboard case study, AI-assisted design process breakdown, and dark mode + mobile onboarding flows — currently in progress.</div>
+    <div class="note">Coming soon: AI-assisted design process breakdown, and dark mode + mobile onboarding flows — currently in progress.</div>
   </div>
 </section>
 
